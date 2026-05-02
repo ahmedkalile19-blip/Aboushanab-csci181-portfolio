@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="" defer></script>
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="hero-wrapper">
+      <header>
+        <div class="container">
+          <span>Ahmed Aboushanab</span>
+
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="hero">
+        <div class="container">
+          <h1>Software Developer</h1>
+          <p>I build clean, functional, and user-focused web applications.</p>
+
+          <div class="cta">
+            <button><a href="" class="btn primary">View Projects</a></button>
+            <button>
+              <a href="resume.pdf" target="_blank" class="btn secondary"
+                >View Resume</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a junior software engineer student born in Egypt and raised in
+        Portugal. I have experience in front-end and back-end development. I'm
+        currently interesed in game development and web development. I would
+        like to further my experience as a developer by working with a
+        professional team.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="user-name">
+          Name:
+          <input id="user-name" type="text" placeholder="enter name" />
+        </label>
+        <label for="user-email">
+          Email:
+          <input id="user-email" type="email" placeholder="rliam@gmail.com" />
+        </label>
+        <label for="user-message">
+          Message:
+          <textarea
+            id="user-message"
+            placeholder="Type here"
+            maxlength="300"
+          ></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
