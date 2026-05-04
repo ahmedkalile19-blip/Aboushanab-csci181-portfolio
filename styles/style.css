@@ -172,7 +172,7 @@ table {
   transform: translateY(0);
 }
 .hero-wrapper {
-  background: url("./images/compagnons-Fa9b57hffnM-unsplash.jpg") center/cover
+  background: url("images/compagnons-Fa9b57hffnM-unsplash.jpg") center/cover
     no-repeat;
   min-height: 66vh;
   position: relative;
