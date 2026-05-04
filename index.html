@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
-    <script src="" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="/scripts/modal.js" defer></script>
     <title>My Portfolio</title>
   </head>
 
@@ -12,18 +16,16 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="hero-wrapper">
       <header>
-        <div class="container">
-          <span>Ahmed Aboushanab</span>
+        <span>Ahmed Aboushanab</span>
 
-          <nav>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="/resume.html#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </header>
 
       <section id="hero">
@@ -32,18 +34,14 @@
           <p>I build clean, functional, and user-focused web applications.</p>
 
           <div class="cta">
-            <button><a href="" class="btn primary">View Projects</a></button>
-            <button>
-              <a href="resume.pdf" target="_blank" class="btn secondary"
-                >View Resume</a
-              >
-            </button>
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="/resume.html" target="_blank" class="btn">View Resume</a>
           </div>
         </div>
       </section>
     </div>
 
-    <section id="about">
+    <section class="about" id="about">
       <h2>About Me</h2>
       <p>
         I am a junior software engineer student born in Egypt and raised in
@@ -54,27 +52,74 @@
       </p>
     </section>
 
-    <section id="contact">
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <ul class="project-cards">
+        <li>
+          <article>
+            <button type="button" class="project-card" data-index="0">
+              <h3>Race Tracker</h3>
+              <img src="/images/race-tracker.jpg" alt="Race Tracker Project" />
+            </button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <button type="button" class="project-card" data-index="1">
+              <h3>Microsoft Clone</h3>
+              <img
+                src="/images/microsoft-clone.jpg"
+                alt="Microsoft Clone Project"
+              />
+            </button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <button type="button" class="project-card" data-index="2">
+              <h3>Web Portfolio</h3>
+              <img
+                src="/images/web-portfolio.jpg"
+                alt="Web Portfolio Project"
+              />
+            </button>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <dialog id="project-modal" tabindex="-1">
+      <button class="close-btn" id="modal-close">Close</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-details"></p>
+      <a id="modal-link" href="#" target="_blank">View Project</a>
+    </dialog>
+
+    <section class="contact" id="contact">
       <h2>Contact</h2>
-      <form>
-        <label for="user-name">
-          Name:
-          <input id="user-name" type="text" placeholder="enter name" />
-        </label>
-        <label for="user-email">
-          Email:
-          <input id="user-email" type="email" placeholder="rliam@gmail.com" />
-        </label>
-        <label for="user-message">
-          Message:
-          <textarea
-            id="user-message"
-            placeholder="Type here"
-            maxlength="300"
-          ></textarea>
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+      <div class="contact-buttons">
+        <a href="mailto:ahmedkalile19@gmail.com" class="contact-btn">
+          <i class="fa-solid fa-envelope"></i>
+          Email Me
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ahmed-m-aboushanab-47b036251/"
+          target="_blank"
+          class="contact-btn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/ahmedkalile19-blip"
+          target="_blank"
+          class="contact-btn"
+        >
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+      </div>
     </section>
   </body>
 </html>
