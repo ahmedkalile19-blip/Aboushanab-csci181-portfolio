@@ -172,7 +172,7 @@ table {
   transform: translateY(0);
 }
 .hero-wrapper {
-  background: url("./images/hero-img.jpg") center/cover no-repeat;
+  background-image: url("../images/hero-img.jpg") center/cover no-repeat;
   min-height: 66vh;
   position: relative;
   color: white;
